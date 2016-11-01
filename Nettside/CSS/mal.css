@@ -48,6 +48,37 @@ nav div a{
 #content {
 	position: absolute;
 }
+#vis_hybler{
+	display: block;
+	position: relative;
+
+}
+#google_map{
+	position: fixed;
+    height:	250px;
+    width: 1000px;
+}
+#hybel_content{
+	border-style: solid;
+	position: fixed;
+	width: 700px;
+	height: 250px;
+	left: 0px;
+	margin-left: 2%;
+	margin-top: 2%;
+	margin-right: 2%;
+}
+#hybel_picture{
+	position: fixed;
+	border-style: solid;
+	right: 20%;
+	width: 250px;
+	height: 250px;
+	max-width: 250px;
+	max-height: 250px;
+	margin-left: 2%;
+	margin-top: 2%;
+}
 footer {
 	height: 150px;
 	position: fixed;
@@ -78,6 +109,8 @@ p a {
 footer p,h2 {
 	margin-left: 22%;
 }
+
+
 
 
 

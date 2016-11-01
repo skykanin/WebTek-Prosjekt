@@ -19,21 +19,31 @@
 		</div>
 	</nav>
 	<div id="content">
+		<h3>My map</h3>
+		<div id="google_map">
+			
+		</div>
 
-		    <div id="vis_hybler">
 
-        		<h3 id="hybel_navn">Her er alle våre hybler</h3>
-
-        			<div id="hybel_content">
-            			<p>HEEUEU</p>
-           			</div>
-
-        			<div id="hybel_picture">
-            			<p>HEu</p>
-        			</div>
-    		</div>
 	</div>
-	
+	    <script>
+      		function initMap() {
+      		  var uluru = {lat: -25.363, lng: 131.044};
+      		  var map = new google.maps.Map(document.getElementById('google_map'), {
+       		  zoom: 4,
+         	  center: uluru
+        	});
+
+        		var marker = new google.maps.Marker({
+          		position: uluru,
+          		map: map
+        		});
+      	}
+    </script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKNFiHfzzUo5oN9QWURKKQjx343lYB9k&callback=initMap">
+		</script>
+
 	<footer class="footer">
 	<img id="sitfooter" src="CSS/sit_svart_bakgrunn.png" alt="sit logo footer">
 	<div id="text">
