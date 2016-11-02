@@ -37,7 +37,7 @@ nav div a{
   text-decoration: none;
   text-align: center;
   padding: 14px 16px;
-  color: black;
+  color: #958f1b;
 }
 
 #logo {
@@ -114,8 +114,12 @@ footer p,h2 {
 
 
 
+<<<<<<< HEAD
 
 
 li a:hover {
+=======
+div a:hover {
+>>>>>>> origin/master
 	color: #555555;
 }
