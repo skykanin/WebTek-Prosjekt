@@ -46,11 +46,13 @@ nav div a{
 	width: 120px;
 }
 #content {
-	position: absolute;
+	position: relative;
 	width: 100%
 }
 #vis_hybler{
-	display: block;
+	width: 100%;
+	height: auto;
+	display: inline-block;
 	position: relative;
 
 }
@@ -58,12 +60,14 @@ nav div a{
 	position: fixed;
     height:	650px;
     width: 90%;
-    margin: 3%
+    margin: 3%;
 }
 #hybel_content{
+	display: inline-block;
 	border-style: solid;
-	position: fixed;
-	width: 700px;
+	position: relative;
+	width: 50%;
+	max-width: 50%;
 	height: 250px;
 	left: 0px;
 	margin-left: 2%;
@@ -71,9 +75,11 @@ nav div a{
 	margin-right: 2%;
 }
 #hybel_picture{
-	position: fixed;
+	position: relative;
+	display: inline-block;
 	border-style: solid;
-	right: 20%;
+	right: -5%;
+	top: 0px;
 	width: 250px;
 	height: 250px;
 	max-width: 250px;
