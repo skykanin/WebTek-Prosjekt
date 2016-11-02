@@ -41,12 +41,13 @@ nav div a{
 }
 
 #logo {
-	position: fixed;
+	position: absolute;
 	height: 50px;
 	width: 120px;
 }
 #content {
 	position: absolute;
+	width: 100%
 }
 #vis_hybler{
 	display: block;
@@ -55,8 +56,9 @@ nav div a{
 }
 #google_map{
 	position: fixed;
-    height:	250px;
-    width: 1000px;
+    height:	650px;
+    width: 90%;
+    margin: 3%
 }
 #hybel_content{
 	border-style: solid;
@@ -81,9 +83,9 @@ nav div a{
 }
 footer {
 	height: 150px;
-	position: fixed;
+	position: absolute;
 	display: flex;
-	bottom: 0px;
+	bottom: -75%;
 	background-color: #303030;
 	width: 100%;
 	font-size: 15pt;
@@ -97,7 +99,7 @@ footer {
 #sitfooter {
 	margin-left: 40px;
 	margin-top: 20px;
-	position: fixed;
+	position: absolute;
 	height: 50px;
 	width: 100px;
 }
