@@ -1,88 +1,100 @@
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
 body {
 	font-family: "Helvetica", "Arial", sans-serif;
 	font-size: 15pt;
-	width: 95%;
-	height: auto;
-	margin: 0;
-	padding: 0;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
 }
 
 h1 {
 	color: #958f1b;
 }
 
-.wrapper {
-	min-height: 100%;
-	position: relative;
+nav {
+  	position: relative;
+  	display: flex;
+  	flex-wrap: wrap;
+  	height: 100px;
+  	width: 100%;
+  	z-index: 2;
+  	list-style-type: none;
+    overflow: hidden;
+    text-decoration: none;
+  	text-align: center;
+    color: black;
 }
 
-nav {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  height: 60px;
-  margin: 0;
-  margin-top: 50px;
-  width: 100%;
-  z-index: 2;
-  padding-left: 20px;
-}
 #navbar {
 	position: absolute;
 	left: 170px;
 	width: 80%;
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    margin-left: 150px;
-    margin-bottom: 20px;
-    height: 60px;
-    overflow: hidden;
+	text-decoration: none;
+	text-align: center;
+	padding: 30px 16px;
+	color: black;
+	list-style-type: none;
 }
 
-nav div {
-  float: left;
+nav, div {
+  	float: left;
 }
 
-nav div a{
-  display: flex;
-  text-decoration: none;
-  text-align: center;
-  padding: 14px 16px;
-  color: black;
+a, div:not(.wrapper) {
+  	text-decoration: none;
+  	text-align: center;
+  	padding: 14px 16px;
+  	color: black;
 }
 
 #logo {
 	position: absolute;
 	height: 50px;
 	width: 120px;
+	left: 30px;
+	top: 30px;
 }
+
 #content {
-	position: absolute;
+	position: relative;
 	width: 45%;
 	margin-left: 60px;
 }
 
-.question {
-	color: #958f1b;
+.wrapper {
+	margin: 0;
+	padding: 0;
+    -webkit-flex: 1 0 auto; /* Safari 6.1+ */
+    -ms-flex: 1 0 auto; /* IE 10 */ 
+	flex: 1 0 auto;
+  	color: black;
 }
 
 .footer {
-	height: 150px;
 	position: relative;
-	display: flex;
-	bottom: -100%;
+	height: 150px;
 	background-color: #303030;
 	width: 100%;
 	font-size: 15pt;
 	color: #cccccc;
 }
+
 #text {
-	display: block;
+	padding: 0;
+	max-height: 150px;
+	width: 50%;
 	position: absolute;
-	left: 100px;
+	left: 120px;
 }
+
 #sitfooter {
 	margin-left: 40px;
 	margin-top: 20px;
@@ -91,7 +103,7 @@ nav div a{
 	width: 100px;
 }
 
-p a {
+p, a {
 	color: #958f1b;
 }
 
@@ -100,13 +112,13 @@ p,h2 {
 }
 
 #hovedbygget {
-	width: 400px; 
-	height: 300px;
+	width: 50%; 
+	height: 60%;
 	position: absolute;
-	margin-left: 850px;
+	margin-left: 65%;
 	margin-top: 5%;
 }
 
-li a:hover {
+a:hover {
 	color: #555555;
 }
