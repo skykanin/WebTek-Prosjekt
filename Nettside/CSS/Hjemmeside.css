@@ -17,13 +17,14 @@ body {
 
 h1 {
 	color: #958f1b;
+	margin: 0;
 }
 
 nav {
   	position: relative;
   	display: flex;
   	flex-wrap: wrap;
-  	height: 100px;
+  	height: 150px;
   	width: 100%;
   	z-index: 2;
   	list-style-type: none;
@@ -43,15 +44,13 @@ nav {
 	color: black;
 	list-style-type: none;
 }
-
-nav, div {
-  	float: left;
+#navbar > div {
+	float: left;
+	padding: 14px 16px;
 }
 
 a, div:not(.wrapper) {
   	text-decoration: none;
-  	text-align: center;
-  	padding: 14px 16px;
   	color: black;
 }
 
@@ -66,7 +65,9 @@ a, div:not(.wrapper) {
 #content {
 	position: relative;
 	width: 45%;
-	margin-left: 60px;
+	margin: 0;
+	left: -20%;
+	display: inline-block;
 }
 
 .wrapper {
@@ -92,7 +93,7 @@ a, div:not(.wrapper) {
 	max-height: 150px;
 	width: 50%;
 	position: absolute;
-	left: 120px;
+	margin-left: 200px;
 }
 
 #sitfooter {
@@ -107,16 +108,31 @@ p, a {
 	color: #958f1b;
 }
 
-p,h2 {
-	margin-left: 22%;
-}
 
 #hovedbygget {
-	width: 50%; 
-	height: 60%;
-	position: absolute;
-	margin-left: 65%;
-	margin-top: 5%;
+	width: 400px; 
+	height: 300px;
+	position: relative;
+	display: inline-block;
+	left: 60%;
+	vertical-align: top;
+}
+
+img {
+	width: 400px; 
+	height: 300px
+}
+
+@media screen and (max-width: 1220px) {
+	#hovedbygget {
+		display: block;
+		flex-direction: column;
+		left: 20%;
+	}
+	#content {
+		left: 20%;
+		width: 400px;
+	}
 }
 
 a:hover {
