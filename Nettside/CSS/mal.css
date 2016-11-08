@@ -1,54 +1,113 @@
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
 body {
 	font-family: "Helvetica", "Arial", sans-serif;
 	font-size: 15pt;
 	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
 }
 
-nav {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  height: 60px;
-  margin: 0;
-  margin-top: 50px;
-  width: 100%;
-  z-index: 2;
-  padding-left: 20px;
-}
 #navbar {
 	position: absolute;
 	left: 170px;
 }
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    margin-left: 150px;
-    margin-bottom: 20px;
-    height: 60px;
+nav {
+  	position: relative;
+  	display: flex;
+  	flex-wrap: wrap;
+  	height: 150px;
+  	width: 100%;
+  	z-index: 2;
+  	list-style-type: none;
     overflow: hidden;
+    text-decoration: none;
+  	text-align: center;
+    color: black;
 }
 
-nav div {
-  float: left;
+#navbar {
+	position: absolute;
+	left: 170px;
+	width: 80%;
+	text-decoration: none;
+	text-align: center;
+	padding: 30px 16px;
+	color: black;
+	list-style-type: none;
 }
 
-nav div a{
-  display: flex;
-  text-decoration: none;
-  text-align: center;
-  padding: 14px 16px;
-  color: #958f1b;
+#navbar > div {
+	float: left;
+	padding: 14px 16px;
+}
+
+a, div:not(.wrapper) {
+  	text-decoration: none;
+  	color: black;
 }
 
 #logo {
 	position: absolute;
 	height: 50px;
 	width: 120px;
+	left: 30px;
+	top: 30px;
 }
+
 #content {
 	position: relative;
-	width: 100%
+	width: 45%;
+	margin: 0;
+	left: -20%;
+	display: inline-block;
 }
+
+.wrapper {
+	margin: 0;
+	padding: 0;
+    -webkit-flex: 1 0 auto; /* Safari 6.1+ */
+    -ms-flex: 1 0 auto; /* IE 10 */ 
+	flex: 1 0 auto;
+  	color: black;
+}
+
+.footer {
+	position: relative;
+	height: 150px;
+	background-color: #303030;
+	width: 100%;
+	font-size: 15pt;
+	color: #cccccc;
+}
+
+#text {
+	padding: 0;
+	max-height: 150px;
+	width: 50%;
+	position: absolute;
+	margin-left: 200px;
+}
+
+#sitfooter {
+	margin-left: 40px;
+	margin-top: 20px;
+	position: absolute;
+	height: 50px;
+	width: 100px;
+}
+
+p, a {
+	color: #958f1b;
+}
+
 #vis_hybler{
 	width: 100%;
 	height: auto;
@@ -87,40 +146,6 @@ nav div a{
 	margin-left: 2%;
 	margin-top: 2%;
 }
-footer {
-	height: 150px;
-	position: absolute;
-	display: flex;
-	bottom: -75%;
-	background-color: #303030;
-	width: 100%;
-	font-size: 15pt;
-	color: #cccccc;
-}
-#text {
-	display: block;
-	position: absolute;
-	left: 100px;
-}
-#sitfooter {
-	margin-left: 40px;
-	margin-top: 20px;
-	position: absolute;
-	height: 50px;
-	width: 100px;
-}
-
-p a {
-	color: #958f1b;
-}
-
-footer p,h2 {
-	margin-left: 22%;
-}
-
-
-
-<<<<<<< HEAD
 
 
 li a:hover {
