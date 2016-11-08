@@ -17,10 +17,6 @@ body {
 	padding: 0px;
 }
 
-#navbar {
-	position: absolute;
-	left: 170px;
-}
 nav {
   	position: relative;
   	display: flex;
@@ -38,7 +34,7 @@ nav {
 	position: absolute;
 	left: 170px;
 	width: 80%;
-	text-decoration: none;
+	text-decoration: overline;
 	text-align: center;
 	padding: 30px 16px;
 	color: black;
@@ -48,11 +44,6 @@ nav {
 #navbar > div {
 	float: left;
 	padding: 14px 16px;
-}
-
-a, div:not(.wrapper, footer) {
-  	text-decoration: none;
-  	color: black;
 }
 
 #logo {
@@ -103,8 +94,13 @@ a, div:not(.wrapper, footer) {
 	width: 100px;
 }
 
+footer < a {
+	color: #958f1b;
+}
+
 a {
 	color: #958f1b;
+	text-decoration: none;
 }
 
 p :not(footer) {
