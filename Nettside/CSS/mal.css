@@ -1,3 +1,5 @@
+/* */
+
 html {
 	width: 100%;
 	height: 100%;
@@ -30,7 +32,6 @@ nav {
     overflow: hidden;
     text-decoration: none;
   	text-align: center;
-    color: black;
 }
 
 #navbar {
@@ -49,7 +50,7 @@ nav {
 	padding: 14px 16px;
 }
 
-a, div:not(.wrapper) {
+a, div:not(.wrapper, footer) {
   	text-decoration: none;
   	color: black;
 }
@@ -102,53 +103,16 @@ a, div:not(.wrapper) {
 	width: 100px;
 }
 
-p, a {
+a {
 	color: #958f1b;
 }
 
-#vis_hybler{
-	width: 100%;
-	height: auto;
-	display: inline-block;
-	position: relative;
-
-}
-#google_map{
-	position: fixed;
-    height:	650px;
-    width: 90%;
-    margin: 3%;
-}
-#hybel_content{
-	display: inline-block;
-	border-style: solid;
-	position: relative;
-	width: 50%;
-	max-width: 50%;
-	height: 250px;
-	left: 0px;
-	margin-left: 2%;
-	margin-top: 2%;
-	margin-right: 2%;
-}
-#hybel_picture{
-	position: relative;
-	display: inline-block;
-	border-style: solid;
-	right: -5%;
-	top: 0px;
-	width: 250px;
-	height: 250px;
-	max-width: 250px;
-	max-height: 250px;
-	margin-left: 2%;
-	margin-top: 2%;
+p :not(footer) {
+	color: black;
 }
 
-
-li a:hover {
-=======
 div a:hover {
->>>>>>> origin/master
 	color: #555555;
 }
+
+/* */
