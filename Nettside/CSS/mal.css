@@ -64,9 +64,7 @@ a, div:not(.wrapper) {
 
 #content {
 	position: relative;
-	width: 45%;
 	margin: 0;
-	left: -20%;
 	display: inline-block;
 }
 
