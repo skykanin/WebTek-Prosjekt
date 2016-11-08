@@ -46,6 +46,21 @@ nav {
 	padding: 14px 16px;
 }
 
+#select {
+	position: absolute;
+	left: 200px;
+	top: 35px;
+	width: 350px;
+	height: 50px;
+	font-size: 1.1em;
+}
+
+#select > option {
+	background-color: #ccc;
+	font-family: "Times New Roman";
+	font-size: 1.1em;
+}
+
 #logo {
 	position: absolute;
 	height: 50px;
