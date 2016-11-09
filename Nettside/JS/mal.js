@@ -5,13 +5,10 @@ WidthChange(mql);
 
 
 // media query change
-function WidthChange(mq) {
+function WidthChange(mql) {
 	if(mql.matches) {
-		// window width is maximum 1220px
+		// window width is maximum 1000px
 		var navbar = document.getElementById("navbar");
-		/*while (navbar.firstChild) {
-    		navbar.removeChild(navbar.firstChild);
-		}*/
 		navbar.style.display = "none";
 		if (document.getElementById("select")) {
 			document.getElementById("select").style.display = "";
@@ -20,7 +17,7 @@ function WidthChange(mq) {
 		}
 		console.log("Changed display of navbar to none");	
 	} else {
-		// window width is greater than 1220px
+		// window width is greater than 1000px
 		var navbar = document.getElementById("navbar");
 		navbar.style.display = "";
 		var select = document.getElementById("select");
