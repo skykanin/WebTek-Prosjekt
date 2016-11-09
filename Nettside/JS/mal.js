@@ -47,6 +47,5 @@ function Createdropdown(){
 }
 
 function slctV(site){
-	window.alert("value changed to: " + site);
 	window.location= site+".html";
 } 
