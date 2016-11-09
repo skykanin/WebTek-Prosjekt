@@ -34,7 +34,7 @@ function Createdropdown(){
 	select.id = "select";
 	var name1 = ["option0", "option1", "option2", "option3", "option4", "option5", "option6", "option7"];
 	var valg = ["Velg side", "Om oss", "Hybel", "Tilbud", "Tips for studenter", "Kart", "Nyttig informasjon", "Kontakt oss"];
-	var verdi =["selector", "OmOss", "hybler", "tilbud", "tips", "map", "info", "kontakt"];
+	var verdi =["selector", "OmOss", "hybler", "tilbud", "tips", "map", "FAQ", "kontakt"];
 
 	for (var i = 0; i < 8; i++) {
 		name1[i] = document.createElement('OPTION');
