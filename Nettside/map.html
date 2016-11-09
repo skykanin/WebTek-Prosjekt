@@ -36,20 +36,32 @@
 	</div>
 	    <script>
       		function initMap() {
-      		  var uluru = {lat: -25.363, lng: 131.044};
+      		  var uluru = {lat: 63.446827, lng: 10.421906};
       		  var map = new google.maps.Map(document.getElementById('google_map'), {
        		  zoom: 4,
          	  center: uluru
         	});
 
-        		var marker = new google.maps.Marker({
-          		position: uluru,
-          		map: map
-        		});
+        	var marker = new google.maps.Marker({
+          	position: uluru,
+          	map: map
+        	});
+        	function detectBrowser() {
+			  var useragent = navigator.userAgent;
+			  var mapdiv = document.getElementById("map");
+
+			  if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1 ) {
+			    mapdiv.style.width = '100%';
+			    mapdiv.style.height = '100%';
+			  } else {
+			    mapdiv.style.width = '600px';
+			    mapdiv.style.height = '800px';
+			  }
+			}
       	}
     </script>
 	<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKNFiHfzzUo5oN9QWURKKQjx343lYB9k&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKNFiHfzzUo5oN9QWURKKQjx343lYB9k&region=NO&language=no&callback=initMap">
 		</script>
 
 	<footer class="footer">
