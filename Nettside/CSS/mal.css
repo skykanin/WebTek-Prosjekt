@@ -118,10 +118,6 @@ a {
 	text-decoration: none;
 }
 
-p:not(footer) {
-	color: #cccccc;
-}
-
 div a:hover {
 	color: #555555;
 }
