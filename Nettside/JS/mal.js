@@ -55,13 +55,15 @@ function slctV(site){
 
 window.onload = function disable(){
 	var current = window.location.href;
-	var server = "http://folk.ntnu.no/nicholvj/public%20html/hjemmeside.html";
+	var filename = current.replace(/^.*[\\\/]/, '');
+	filename = filename.slice(0, -5);
+	/*var server = "http://folk.ntnu.no/nicholvj/public%20html/hjemmeside.html";
 	if (current.length > server.length) {
 		var current = current.slice("file:///C:/Users/Nicholas%20Jaunsen/Documents/GitHub/WebTek-Prosjekt/Nettside/".length);
 	} else if (current.length < server.length || current.length == server.length) {
 		var current = current.slice("http://folk.ntnu.no/nicholvj/public%20html/".length);
 	}
-	var current = current.slice(0,current.length-5);
-	console.log("navnet på option taggen selected skal inn i: "+current);
-	document.getElementsByTagName('option')[verdi.indexOf(current)].selected = "true";
+	var current = current.slice(0,current.length-5);*/
+	console.log("navnet på option taggen selected attributten skal inn i er "+filename);
+	document.getElementsByTagName('option')[verdi.indexOf(filename)].selected = "true";
 }
