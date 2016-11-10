@@ -6,11 +6,14 @@ const pictures=[["hybel_1_1", "hybel_1_2", "hybel_1_3"],
 for(var i in hybelpictures){
 	bildegalleriClick(hybelpictures[i], i);
 }
+
+//setter en funksjon til hvert bilde
 function bildegalleriClick(picture, index){
 	picture.onclick=function(){
 		lagBildeGalleri(index)
 	}
 }
+//selve galleriet, bytter bilde basert på index man startet med
 function lagBildeGalleri(index){
 	const frame=document.createElement("div"),
 		background=document.createElement("div"),
@@ -48,7 +51,8 @@ function lagBildeGalleri(index){
 		next.style.top=back.style.top=this.height/2-25+"px";
 	}
 
-
+	//funker å bla med piltaster, trykke på pilene, og trykke på bildet
+	//kan lukke med esc, trykke på X og trykke ut av galleriet
 	background.onclick=function(){				
 		document.body.removeChild(background);
 	}
@@ -91,3 +95,4 @@ function lagBildeGalleri(index){
 
 
 }
+console.log((-1)%3)

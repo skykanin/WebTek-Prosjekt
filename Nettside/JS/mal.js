@@ -42,10 +42,11 @@ function Createdropdown(){
 		name1[i].value = verdi[i];
 		name1[i].innerHTML = valg[i];
 	}
-	select.setAttribute("onchange", "slctV(this.value)");
+	select.setAttribute("onchange", "slctV(this, select.selectedIndex, select)");
 	document.getElementsByTagName('option')[0].disabled = "disabled";
 }
 
-function slctV(site){
-	window.location= site+".html";
+function slctV(site, i, select){
+	window.location= site.value+".html";		
+	select.selectedIndex=i
 } 
