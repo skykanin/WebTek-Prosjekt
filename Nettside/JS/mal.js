@@ -25,28 +25,43 @@ function WidthChange(mql) {
 		console.log("Changed display of navbar to visible");
 	}
 }
-
-// dropdown menu
+// dropdown menu function
 function Createdropdown(){
 	var nav = document.getElementsByTagName('nav')[0];
 	var select = document.createElement('SELECT');
 	nav.appendChild(select);
 	select.id = "select";
+
 	var name1 = ["option0", "option1", "option2", "option3", "option4", "option5", "option6", "option7", "option8"];
 	var valg = ["Velg side", "Hjemmeside", "Om oss", "Hybel", "Tilbud", "Tips for studenter", "Kart", "Nyttig informasjon", "Kontakt oss"];
 	var verdi =["selector", "hjemmeside", "omOss", "hybler", "tilbud", "tips", "map", "FAQ", "kontakt"];
-
-	for (var i = 0; i < 9; i++) {
+	for (i = 0; i < 9; i++) {
 		name1[i] = document.createElement('OPTION');
 		select.appendChild(name1[i]);
 		name1[i].value = verdi[i];
 		name1[i].innerHTML = valg[i];
 	}
-	select.setAttribute("onchange", "slctV(this, select.selectedIndex, select)");
+	select.setAttribute("onchange", "slctV(this.value)");
 	document.getElementsByTagName('option')[0].disabled = "disabled";
 }
+// list of option tag values
+var verdi =["selector", "hjemmeside", "omOss", "hybler", "tilbud", "tips", "map", "FAQ", "kontakt"];
+// function that loads the selected html site
+function slctV(site){
+	window.location= site+".html";
+	disable(site);
 
-function slctV(site, i, select){
-	window.location= site.value+".html";		
-	select.selectedIndex=i
-} 
+}
+
+window.onload = function disable(){
+	var current = window.location.href;
+	var server = "http://folk.ntnu.no/nicholvj/public%20html/hjemmeside.html";
+	if (current.length > server.length) {
+		var current = current.slice("file:///C:/Users/Nicholas%20Jaunsen/Documents/GitHub/WebTek-Prosjekt/Nettside/".length);
+	} else if (current.length < server.length || current.length == server.length) {
+		var current = current.slice("http://folk.ntnu.no/nicholvj/public%20html/".length);
+	}
+	var current = current.slice(0,current.length-5);
+	console.log("navnet på option taggen selected skal inn i: "+current);
+	document.getElementsByTagName('option')[verdi.indexOf(current)].selected = "true";
+}
