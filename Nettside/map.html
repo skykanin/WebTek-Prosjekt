@@ -27,7 +27,7 @@
 		</div>
 	</nav>
 	<div id="content">
-		<h3>My map</h3>
+		<h3>Kart over hyblene</h3>
 		<div id="google_map">
 			
 		</div>
@@ -36,16 +36,47 @@
 	</div>
 	    <script>
       		function initMap() {
-      		  var uluru = {lat: -25.363, lng: 131.044};
+      		  var Trondheim = {lat: 63.419504, lng: 10.401925};
       		  var map = new google.maps.Map(document.getElementById('google_map'), {
-       		  zoom: 4,
-         	  center: uluru
+       		  zoom: 13,
+         	  center: Trondheim
         	});
+      		map.setOptions({ minZoom: 13, maxZoom: 20 });
 
-        		var marker = new google.maps.Marker({
-          		position: uluru,
-          		map: map
-        		});
+    		var house_1 = new google.maps.Marker({
+      		position: {lat: 63.426069 , lng:10.391075},
+      		map: map,
+      		title: 'Vilhelm Storms gate 3'
+    		});
+    		var house_2 = new google.maps.Marker({
+      		position: {lat:63.430849 , lng:10.390542},
+      		map: map,
+      		title: 'KONGENS GATE 32'
+    		});
+    		var house_3 = new google.maps.Marker({
+      		position: {lat:63.436328 , lng:10.457394},
+      		map: map,
+      		title: 'Falkenborgvegen 21'
+    		});
+    		var house_1_info = new google.maps.InfoWindow({
+      			content: "Vilhelm Storms gate 3"
+    		});       		
+    		var house_2_info = new google.maps.InfoWindow({
+      			content: "KONGENS GATE 32"
+    		});       		
+    		var house_3_info = new google.maps.InfoWindow({
+      			content: "Falkenborgvegen 21"
+    		});       		
+    		
+    		house_1.addListener('click', function() {
+      			house_1_info.open(map, house_1);
+   			});
+    		house_2.addListener('click', function() {
+      			house_2_info.open(map, house_2);
+   			});
+    		house_3.addListener('click', function() {
+      			house_3_info.open(map, house_3);
+   			});
       	}
     </script>
 	<script async defer
