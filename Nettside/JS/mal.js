@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var mq = window.matchMedia("(max-width: 1220px)");
 
 if (mq.matches) {
