@@ -3,9 +3,47 @@
 	<head>
 		<meta charset="utf-8">
 		<title> Home page </title>
-		<link rel="stylesheet" href="CSS/Hjemmeside.css">
+		<link rel="stylesheet" href="CSS/mal.css">
+		<style type="text/css">
+			#content {
+				width: 45%;
+				margin: 0;
+				left: -20%;
+				display: inline-block;
+			}
+			#hovedbygget {
+				width: 400px; 
+				height: 300px;
+				position: relative;
+				display: inline-block;
+				left: 60%;
+				vertical-align: top;
+			}
+			a, div:not(.wrapper) {
+				text-decoration: none;
+			}
+			img {
+				width: 400px; 
+				height: 300px
+			}
+			@media screen and (max-width: 1220px) {
+				#hovedbygget {
+					display: block;
+					flex-direction: column;
+					left: 20%;
+				}
+				#content {
+					left: 20%;
+					width: 400px;
+				}
+			}
+			h1 {
+				color: #958f1b;
+				margin: 0;
+			}
+		</style>
 	</head>
-	<body background="Content/bakgrunn.jpg">
+<body background="Content/bakgrunn.jpg">
 	<div class="wrapper">
 	<nav>
 		<a href=""><img id="logo" src="Content/test_sit.png" alt="sit logo"/></a>
@@ -21,22 +59,21 @@
 	</nav>
 	<div id="hovedbygget"><img src="Content/hovedbygget.jpg" alt="hovedbygget"></div>
 	<div id="content">
-	<h1> Velkommen som student i Trondheim! </h1> <br>
-	Vi i Sit har et sterkt ønske om å være en trygg og god tilbyder av studentboliger i Trondheim, og gjennom oss får man tilbud om boliger enten man er singel, par eller familie. Boligene er godt vedlikeholdt og spredt over flere områder i byen. Vi vet at det er mange av de som søker boliger gjennom oss, som er førstegangssøkere og vi er derfor opptatt av en enkel og oversiktlig prosess slik at leietakeren får en god førstegangserfaring. <br><br>
+		<h1> Velkommen som student i Trondheim! </h1> <br>
+		Vi i Sit har et sterkt ønske om å være en trygg og god tilbyder av studentboliger i Trondheim, og gjennom oss får man tilbud om boliger enten man er singel, par eller familie. Boligene er godt vedlikeholdt og spredt over flere områder i byen. Vi vet at det er mange av de som søker boliger gjennom oss, som er førstegangssøkere og vi er derfor opptatt av en enkel og oversiktlig prosess slik at leietakeren får en god førstegangserfaring. <br><br>
 
-	Vi har valgt å gjøre om på boligsidene til Sit, slik at de kan gjenspeile oversiktligheten vi er ute etter når studenter søker bolig gjennom oss. Målet er at søknadsprosessen skal føles enkel og seriøs.  <br><br>
+		Vi har valgt å gjøre om på boligsidene til Sit, slik at de kan gjenspeile oversiktligheten vi er ute etter når studenter søker bolig gjennom oss. Målet er at søknadsprosessen skal føles enkel og seriøs.  <br><br>
 
-	<h2> Vi håper du søker boligen din gjennom oss. </h2>  
+		<h2> Vi håper du søker boligen din gjennom oss. </h2>  
 	</div>
 	</div>
-
 	<footer class="footer">
-	<img id="sitfooter" src="Content/sit_svart_bakgrunn.png" alt="sit logo footer">
-	<div id="text">
-	<p>Postboks 2460, Sluppen, 7005 Trondheim <br>
-	Epost: <a href="mailto:sit@sit.no">sit@sit.no</a> Tlf: 73 59 32 50 </p>
-	</div>
+		<img id="sitfooter" src="Content/sit_svart_bakgrunn.png" alt="sit logo footer">
+		<div id="text">
+		<p>Postboks 2460, Sluppen, 7005 Trondheim <br>
+		Epost: <a href="mailto:sit@sit.no">sit@sit.no</a> Tlf: 73 59 32 50 </p>
+		</div>
 	</footer>
 	<script type="text/javascript" src="JS/mal.js"></script>
-	</body>
-	</html>
+</body>
+</html>

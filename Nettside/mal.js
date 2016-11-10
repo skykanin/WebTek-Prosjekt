@@ -1,1 +1,0 @@
-var mq = window.matchMedia("(min-width: 1220px)");
