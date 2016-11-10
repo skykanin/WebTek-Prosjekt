@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Tilbud </title>
+		<link rel="stylesheet" href="CSS/mal.css">
+		<style type="text/css">
+			img {
+				height: 250px;
+				width: 250px;
+			}
+
+			#tidEin {
+				display: block;
+				z-index: 0;
+				position: absolute;
+				max-height: 200px;
+				width: 400px;
+				visibility: hidden;
+			}
+			#tidTo {
+				z-index: 1;
+				position: absolute;
+				display: block;
+				max-height: 200px;
+				width: 400px;
+				visibility: hidden;
+			}
+			#tidTre {
+				z-index: 2;
+				position: absolute;
+				display: block;
+				max-height: 200px;
+				width: 400px;
+				visibility: hidden;
+			}
+			#tidFire {
+				z-index: 3;
+				position: absolute;
+				display: block;
+				max-height: 200px;
+				width: 400px;
+				visibility: hidden;
+			}
+			#tidFem {
+				z-index: 4;
+				position: absolute;
+				display: block;
+				max-height: 200px;
+				width: 400px;
+				visibility: hidden;
+
+			}
+			#imageOne {
+				z-index: 0;
+				display: inline-block;
+				position: absolute;
+				height: 250px;
+				width: 250px;
+				visibility: hidden;
+			}
+			#imageTwo {
+				z-index: 1;
+				position: absolute;
+				height: 250px;
+				width: 250px;
+				display: inline-block;
+				visibility: hidden;
+			}
+			#imageThree {
+				z-index: 2;
+				display: inline-block;
+				position: absolute;
+				height: 250px;
+				width: 250px;
+				visibility: hidden;
+
+			}
+			#imageFour {
+				z-index: 3;
+				display: inline-block;
+				position: absolute;
+				height: 250px;
+				width: 250px;
+				visibility: hidden;
+			}
+			#imageFive {
+				z-index: 4;
+				display: inline-block;
+				position: absolute;
+				height: 250px;
+				width: 250px;
+				visibility: hidden;
+			}
+
+			.containerOne {
+				position: relative;
+				display: inline-block;
+			}
+			.containerTwo {
+				position: absolute;
+				display: inline-block;
+				right: 700px;
+			}
+			.containerThree {
+				position: absolute;
+				display: inline-block;
+				right: 350px;
+			}
+
+			#tilbudHead {
+				width: 50%;
+				color: black;
+				padding: 50px;
+			}
+			.over {
+				margin-left: 50px;
+				margin-top: 25px;
+			}
+		</style>
+	</head>
+	<body background="bakgrunn.jpg">
+		<div class="wrapper">
+		<nav>
+			<a href=""><img id="logo" src="test_sit.png" alt="sit logo"/></a>
+			<div id="navbar">
+				<div><a href="/">Om oss</a></div>
+				<div><a href="/">Hybel</a></div>
+				<div><a href="/">Tilbud</a></div>
+				<div><a href="/">Tips for studenter</a></div>
+				<div><a href="/">Kart</a></div>
+				<div><a href="/">Nyttig informasjon</a></div>
+				<div><a href="/">Kontakt oss</a></div>
+			</div>
+		</nav>
+		
+		<div id="content">
+			<div id="tilbudHead">
+				<h1>Treningsenter</h1>
+				<p>SIT gir deg tilbud til trening for ein rimelig penge. Vi har 5 treningsenter spreidd over Trondheim, slik at alle studentene kan benytte seg av våre tilbud!</p>
+			</div>
+			<div class="contain">
+				<div class="containerOne">
+					<div class="over">
+						<div onmouseover="Gløs()" onmouseout="Gløs2()"><a class="Gløs">Gløshaugen</a></div>
+						<div onmouseover="Portalen()" onmouseout="Portalen2()"><a class="Portalen">Portalen</a></div>
+						<div onmouseover="Dragvoll()" onmouseout="Dragvoll2()"><a class="Dragvoll">Dragvoll</a></div>
+						<div onmouseover="Moholt()" onmouseout="Moholt2()"><a class="Moholt">Moholt</a></div>
+						<div onmouseover="DMMH()" onmouseout="DMMH2()"><a class="DMMH">DMMH</a></div>
+					</div>
+				</div>
+				<div class="containerThree">
+					<img src="Gløshaugen.jpg" id="imageOne" alt="Gløshaugen">
+					<img src="Portalen.jpg" id="imageTwo" alt="Portalen">
+					<img src="Dragvoll idrettssenter.jpg" id="imageThree" alt="Dragvoll">
+					<img src="Moholt.jpg" id="imageFour" alt="Moholt">
+					<img src="Sit Idrett DMMH.jpg" id="imageFive" alt="DMMH">
+				</div>
+				<div class="containerTwo">
+					<div id="tidEin">
+						<ul>
+							<p>Åpningstider:</p>
+							<li>Mandag:		06.30 - 23.30</li>
+							<li>Tirsdag:	07.30 - 23.00</li>
+							<li>Onsdag:		06.30 - 23.30</li>
+							<li>Torsdag:	07.30 - 23.00</li>
+							<li>Fredag:		07.30 - 23.00</li>
+							<li>Lørdag:		10.00 - 20.00</li>
+							<li>Søndag:		10.00 - 22.00</li>
+						</ul>
+					</div>
+					<div id="tidTo">
+						<ul>
+							<p>Åpningstider:</p>
+							<li>Mandag:		07.30 - 22.00</li>
+							<li>Tirsdag:	06.30 - 22.00</li>
+							<li>Onsdag:		07.30 - 22.00</li>
+							<li>Torsdag:	06.30 - 22.00</li>
+							<li>Fredag:		07.30 - 21.00</li>
+							<li>Lørdag:		10.00 - 18.00</li>
+							<li>Søndag:		10.00 - 21.00</li>
+						</ul>
+					</div>
+					<div id="tidTre">
+						<ul>
+							<p>Åpningstider:</p>
+							<li>Mandag:		07.30 - 22.00</li>
+							<li>Tirsdag:	07.30 - 22.00</li>
+							<li>Onsdag:		07.30 - 22.00</li>
+							<li>Torsdag:	07.30 - 22.00</li>
+							<li>Fredag:		07.30 - 22.00</li>
+							<li>Lørdag:		10.00 - 20.00</li>
+							<li>Søndag:		10.00 - 22.00</li>
+						</ul>
+					</div>
+					<div id="tidFire">
+						<ul>
+							<p>Åpningstider:</p>
+							<li>Mandag:		08.00 - 22.00</li>
+							<li>Tirsdag:	08.00 - 22.00</li>
+							<li>Onsdag:		08.00 - 22.00</li>
+							<li>Torsdag:	08.00 - 22.00</li>
+							<li>Fredag:		08.00 - 22.00</li>
+							<li>Lørdag:		08.00 - 22.00</li>
+							<li>Søndag:		08.00 - 22.00</li>
+						</ul>
+					</div>
+					<div id="tidFem">
+						<ul>
+							<p>Åpningstider:</p>
+							<li>Mandag:		06.30 - 23.00</li>
+							<li>Tirsdag:	06.30 - 23.00</li>
+							<li>Onsdag:		06.30 - 23.00</li>
+							<li>Torsdag:	06.30 - 23.00</li>
+							<li>Fredag:		06.30 - 23.00</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div >
+				
+			</div>	
+		</div>
+		</div>
+		<footer class="footer">
+			<img id="sitfooter" src="sit_svart_bakgrunn.png" alt="sit logo footer">
+			<div id="text">
+				<p>Postboks 2460, Sluppen, 7005 Trondheim <br>
+				Epost: <a href="mailto:sit@sit.no">sit@sit.no</a> Tlf: 73 59 32 50 </p>
+			</div>
+		</footer>
+		<script src="Tilbud.js"></script>
+	</body>
+</html>
