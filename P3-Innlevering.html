@@ -28,6 +28,15 @@
 		margin: 0px;
 		padding-left: 5px;
 	}
+	#description {
+		width: 500px;
+	}
+	.tableRow {
+		text-align: left;
+	}
+	table {
+		text-align: center;
+	}
 	h2, h3 {
 		text-align: left;
 	}
@@ -36,6 +45,9 @@
 		margin-bottom: 5px;
 		width: 70%;
         display: block;
+	}
+	li 	{
+		margin: 5px;
 	}
 	figcaption {
 		font-size: 0.875em;
@@ -52,14 +64,20 @@ Nicholas Jaunsen, Thomas Almestad, Simon Nordvold, Adrian Hofseth and Erik Krüg
 <h2 id="head">2. Administrative Details</h2>
 <p>Client Name: Studentsamskipnaden i Trondheim</p>
 <p>Website Name: Boligsøk hos SiT </p>
-Nicholas Jaunsen, Thomas Almestad, Simon Nordvold, Adrian Hofseth and Erik Krüger <p id="date">IT2805 November 2016</p></div>
+<p>Link to our website: <a href="/">Click here</a></p>
+</div>
 <div>
 <h2 id="head">3. The changes we have made</h2>
-<p>We have not changed much from the original design we detailed in P2 because we planned our design well and </p>
+<p>We have not changed much from the original design we detailed in P2 because we planned our design and the sites functionallity well. </p>
+<p><b>Changes to all websites:</b> Istead of having a roll down menu, we added all the links as divs in a row, but added a rolldown menu when the veiwport width
+is under 1000px so that the site is more reactive.</p>
+<p><b>Changes to hybler.html:</b> Decided to not make individual websites for the houses that are displayed in hybler.html and instead made a slideshow of the 
+images in hybler.html</p>
+
 </div>
 <div>
 <h2 id="head">4. Updated Organizational Scheme</h2>
-<p>All of the following files are gathered inside the folder named 'website'</p>
+<p>All of the following files are gathered inside the folder named 'nettside'</p>
 <p>List of files and folders</p>
 <ul>
 	<li>homepage.html</li>
@@ -68,9 +86,13 @@ Nicholas Jaunsen, Thomas Almestad, Simon Nordvold, Adrian Hofseth and Erik Krüg
 	<li>hybler.html</li>
 	<li>mal.html</li>
 	<li>map.html</li>
+	<li>tilbud.html</li>
+	<li>tips.html</li>
+	<li>kontakt.html</li>
 	<li>JS/
 		<ul>
 			<li>mal.js</li>
+			<li>bildegalleri.js</li>
 		</ul>
 	</li>
 	<li>CSS/
@@ -78,7 +100,302 @@ Nicholas Jaunsen, Thomas Almestad, Simon Nordvold, Adrian Hofseth and Erik Krüg
 			<li>mal.css</li>
 		</ul>
 	</li>
+	<li>Content/
+		<ul>
+			<li>ATB.jpg</li>
+			<li>bakgrunn.jpg</li>
+			<li>Dragvoll idrettssenter.jpg</li>
+			<li>Gløshaugen.jpg</li>
+			<li>hovedbygget.jpg</li>
+			<li>lånekassen.jpeg</li>
+			<li>Mattilbud.jpg</li>
+			<li>Moholt.jpg</li>
+			<li>Portalen.jpg</li>
+			<li>Sit Idrett DMMH.jpg</li>
+			<li>sit_svart_bakgrunn.png</li>
+			<li>studenterrandom.jpg</li>
+			<li>test_sit.png</li>
+			<li>Hybel_pictures/
+				<ul>
+					<li>arrow.gif</li>
+					<li>hybel_1_1.jpg</li>
+					<li>hybel_1_2.jpg</li>
+					<li>hybel_1_3.jpg</li>
+					<li>hybel_2_1.jpg</li>
+					<li>hybel_2_2.jpg</li>
+					<li>hybel_2_3.jpg</li>
+					<li>hybel_3_1.jpg</li>
+					<li>hybel_3_2.jpg</li>
+					<li>hybel_3_3.jpg</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
 </ul>
+
+<h3>Final Work Division</h3>
+<table border="1">
+    <tbody>
+        <tr>
+            <td width="151" valign="top">
+                <p align="center">
+                    <strong>Filename</strong>
+                </p>
+            </td>
+            <td id="description" width="151" valign="top">
+                <p align="center">
+                    <strong>Description</strong>
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p align="center">
+                    <strong>In charge</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Index.html
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    The Homepage
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Adrian
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    About.html
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    The about page, general information about SiT
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Adrian
+                </p>
+            </td>           
+        </tr>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Nyttig_info.html
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Useful information for new students about SiT housings etc
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Adrian
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Tips.html
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Useful information for new students about general things, loans etc
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Erik
+                </p>
+            </td>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Kontakt.html
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Page containing the contact information of the SiT facilities and security
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Erik
+                </p>
+            </td>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Tilbud.html
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Page containing information about the training facilities and other offers from SiT
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Erik
+                </p>
+            </td>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Hybel.html
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    The page showing all available apartments for rent
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Simon
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Kart.html
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    A map containing data point with the locations for the different apartments
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Simon
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Gallery.js
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    A picture viewing script. Has a small version with next and last picture and a bigger version for full-size images
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Nicholas
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Objects.js
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    The script that will show and sort the different apartments in hybel.html
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Thomas
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    rollOvermenu.js
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Will show a rollover menu for selecting the different top menus.
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Nicholas
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Storage.js
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Give the user an option to save favorite apartment and add a comment
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Thomas
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Styling.css
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    The CSS file containing all styling for the website.
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Everyone
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="151" valign="top">
+                <p>
+                    Double Check everything!
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    <strong>Double Check everything!</strong>
+                </p>
+            </td>
+            <td width="151" valign="top">
+                <p>
+                    Everyone
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
 </div>
+<script type="text/javascript">
+var rows = document.getElementsByTagName('td');
+for (var i = 1; i < rows.length; i+=3) {
+	rows[i].className = "tableRow";
+}
+</script>
 </body>
 </html>

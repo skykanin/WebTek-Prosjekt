@@ -110,8 +110,7 @@
 
 			#tilbudHead {
 				width: 50%;
-				color: black;
-				padding: 50px;
+				margin-left: 50px;
 			}
 			.over {
 				margin-left: 50px;
@@ -119,10 +118,10 @@
 			}
 		</style>
 	</head>
-	<body background="bakgrunn.jpg">
+	<body background="content/bakgrunn.jpg">
 		<div class="wrapper">
 		<nav>
-			<a href=""><img id="logo" src="test_sit.png" alt="sit logo"/></a>
+			<a href=""><img id="logo" src="content/test_sit.png" alt="sit logo"/></a>
 			<div id="navbar">
 				<div><a href="/">Om oss</a></div>
 				<div><a href="/">Hybel</a></div>
@@ -150,11 +149,11 @@
 					</div>
 				</div>
 				<div class="containerThree">
-					<img src="Gløshaugen.jpg" id="imageOne" alt="Gløshaugen">
-					<img src="Portalen.jpg" id="imageTwo" alt="Portalen">
-					<img src="Dragvoll idrettssenter.jpg" id="imageThree" alt="Dragvoll">
-					<img src="Moholt.jpg" id="imageFour" alt="Moholt">
-					<img src="Sit Idrett DMMH.jpg" id="imageFive" alt="DMMH">
+					<img src="content/Gløshaugen.jpg" id="imageOne" alt="Gløshaugen">
+					<img src="content/Portalen.jpg" id="imageTwo" alt="Portalen">
+					<img src="content/Dragvoll idrettssenter.jpg" id="imageThree" alt="Dragvoll">
+					<img src="content/Moholt.jpg" id="imageFour" alt="Moholt">
+					<img src="content/Sit Idrett DMMH.jpg" id="imageFive" alt="DMMH">
 				</div>
 				<div class="containerTwo">
 					<div id="tidEin">
@@ -223,12 +222,54 @@
 		</div>
 		</div>
 		<footer class="footer">
-			<img id="sitfooter" src="sit_svart_bakgrunn.png" alt="sit logo footer">
+			<img id="sitfooter" src="content/sit_svart_bakgrunn.png" alt="sit logo footer">
 			<div id="text">
 				<p>Postboks 2460, Sluppen, 7005 Trondheim <br>
 				Epost: <a href="mailto:sit@sit.no">sit@sit.no</a> Tlf: 73 59 32 50 </p>
 			</div>
 		</footer>
-		<script src="Tilbud.js"></script>
-	</body>
+		<script type="text/javascript" src="JS/mal.js"></script>
+		<script type="text/javascript">
+			function Gløs() {
+				document.getElementById("imageOne").style.visibility = "visible";
+				document.getElementById("tidEin").style.visibility = "visible";
+			}
+			function Portalen() {
+				document.getElementById("imageTwo").style.visibility = "visible";
+				document.getElementById("tidTo").style.visibility = "visible";
+			}
+			function Dragvoll() {
+				document.getElementById("imageThree").style.visibility = "visible";
+				document.getElementById("tidTre").style.visibility = "visible";
+			}
+			function Moholt() {
+				document.getElementById("imageFour").style.visibility = "visible";
+				document.getElementById("tidFire").style.visibility = "visible";
+			}
+			function DMMH() {
+				document.getElementById("imageFive").style.visibility = "visible";
+				document.getElementById("tidFem").style.visibility = "visible";
+			}
+			function Gløs2() {
+				document.getElementById("imageOne").style.visibility = "hidden";
+				document.getElementById("tidEin").style.visibility = "hidden";
+			}
+			function Portalen2() {
+				document.getElementById("imageTwo").style.visibility = "hidden";
+				document.getElementById("tidTo").style.visibility = "hidden";
+			}
+			function Dragvoll2() {
+				document.getElementById("imageThree").style.visibility = "hidden";
+				document.getElementById("tidTre").style.visibility = "hidden";
+			}
+			function Moholt2() {
+				document.getElementById("imageFour").style.visibility = "hidden";
+				document.getElementById("tidFire").style.visibility = "hidden";
+			}
+			function DMMH2() {
+				document.getElementById("imageFive").style.visibility = "hidden";
+				document.getElementById("tidFem").style.visibility = "hidden";
+			}
+		</script>
+		</body>
 </html>
