@@ -15,6 +15,7 @@ body {
 	flex-direction: column;
 	margin: 0px;
 	padding: 0px;
+	background-image: url("../content/bakgrunn.jpg")
 }
 
 nav {
