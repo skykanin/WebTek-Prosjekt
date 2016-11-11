@@ -6,10 +6,22 @@
 			.hybel_content{
 				display: inline-block;
 				flex:1;
+				overflow: auto;
+				border-style: none;
 				position: relative;
-				max-width: 50%;
+				height: auto;
+				left: 0px;
+				margin-left: 50px;
 				margin-top: 2%;
-				padding-left:50px;
+				margin-right: 10%;
+				width: 50%;
+			}
+			ul{
+				list-style: none;
+			}   
+			li:before {
+   				content: "• ";
+    			color: #969100;
 			}
 			#vis_hybler{
 				width: 100%;
@@ -20,27 +32,24 @@
 			}
 			.hybel_picture{
 				position: relative;
+				vertical-align: top;
 				display: inline-block;
-				right: -10%;
-				border-radius:30px;
+				border-radius: 25px;
+				overflow: hidden;
+				width: 250px;
 				height:225px;
+				margin-left: 50px;
+				margin-top: 2%;
+				margin-right: 2%;
 				cursor: pointer;
-				background-image:url("Content/bakgrunn.jpg");
-				vertical-align: right;
+				background:white;
 			}
 			.hybel_picture > img{
+				width:250px;
 				height:225px;
-				border-radius: 30px;
 			}
 			.hybel_picture:hover{
 				opacity:.85;
-			}
-			@media screen and (max-width:1000px){
-				.hybel_picture{
-					display:block;
-					margin-left:50px;
-					left:0;
-				}
 			}
 			.hybel_content ul {
 			  display: inline-block;
@@ -99,8 +108,20 @@
 			#hybel_navn{
 				padding-left:50px;
 			}
+			@media screen and (max-width: 953px){
+				.hybel_picture{
+					left:calc(25%);
+				}
+				.hybel_content{
+					left:calc(25%);
+				}
+				#hybel_navn{
+					padding-left:25%;				
+				}
+			}
+
 		</style>
-		<title> SIT - Hybler </title>
+		<title> Hybler </title>
 		<link rel="stylesheet" href="CSS/mal.css">
 	</head>
 	<body>
@@ -119,7 +140,7 @@
 	<div class="wrapper">
 		<div id="content">
 		    <div id="vis_hybler">
-        		<h3 id="hybel_navn">Her er alle våre hybler</h3>
+        		<h2 id="hybel_navn">Her er alle våre hybler</h2>
               <div class="hybel_content">
                   <p>Leilighet med tre hybler. Perfekt for studenter midt i sentrum av Trondheim. Ligger rett ved Trondheim Torg. Alt er i nærheten. Buss rett utenfor bygget med lett tilgang til Dragvoll, NTNU og BI.</p>
                   <ul>
@@ -134,7 +155,7 @@
                 </div>
 
               <div class="hybel_picture">
-                  <img src="Content\Hybel_pictures\hybel_1_1.jpg">
+                  <img src="Content/Hybel_pictures/hybel_1_1.jpg" alt="Hybel Picture">
               </div>
 
                 <div class="hybel_content">
@@ -151,7 +172,7 @@
                 </div>
 
               <div class="hybel_picture">
-                  <img src="Content\Hybel_pictures\hybel_2_1.jpg">
+                  <img src="Content/Hybel_pictures/hybel_2_1.jpg" alt="Hybel Picture">
               </div>
 
               <div class="hybel_content">

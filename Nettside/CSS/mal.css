@@ -17,6 +17,10 @@ body {
 	padding: 0px;
 	background-image: url("../content/bakgrunn.jpg");
 }
+@media screen and (max-width:1080px){
+	body{
+	}
+}
 
 nav {
   	position: relative;
