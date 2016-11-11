@@ -46,8 +46,8 @@ function lagBildeGalleri(index){
 	img.onload=function(){
 		frame.style.width=120+this.width+"px";
 		frame.style.height=this.height+"px";
-		frame.style.left=window.outerWidth/2-(120+this.width)/2+"px";
-		frame.style.top=window.outerHeight/2-this.height/2+"px";
+		frame.style.left=window.innerWidth/2-(120+this.width)/2+"px";
+		frame.style.top=window.innerHeight/2-this.height/2+"px";
 		next.style.top=back.style.top=this.height/2-25+"px";
 	}
 
