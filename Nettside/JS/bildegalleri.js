@@ -46,8 +46,8 @@ function lagBildeGalleri(index){
 	img.onload=function(){
 		var defaultWidth=this.width,
 			defaultHeight=this.height;
-		if(this.width>=window.outerWidth+120){
-			this.width=window.outerWidth-120;
+		if(this.width>=window.innerWidth+120){
+			this.width=window.innerWidth-120;
 		}
 		else{
 			this.width=defaultWidth;
@@ -55,13 +55,13 @@ function lagBildeGalleri(index){
 		}
 		frame.style.width=120+this.width+"px";
 		frame.style.height=this.height+"px";
-		frame.style.left=window.outerWidth/2-(120+this.width)/2+"px";
-		frame.style.top=window.outerHeight/2-this.height/2+"px";
+		frame.style.left=window.innerWidth/2-(120+this.width)/2+"px";
+		frame.style.top=window.innerHeight/2-this.height/2+"px";
 		next.style.top=back.style.top=this.height/2-25+"px";
 
 		window.onresize=function(){
-			if(img.width>=window.outerWidth+120){
-				img.width=window.outerWidth-120;
+			if(img.width>=window.innerWidth+120){
+				img.width=window.innerWidth-120;
 			}
 			else{
 				img.width=defaultWidth;
@@ -69,8 +69,8 @@ function lagBildeGalleri(index){
 			}
 			frame.style.width=120+img.width+"px";
 			frame.style.height=img.height+"px";
-			frame.style.left=window.outerWidth/2-(120+img.width)/2+"px";
-			frame.style.top=window.outerHeight/2-img.height/2+"px";
+			frame.style.left=window.innerWidth/2-(120+img.width)/2+"px";
+			frame.style.top=window.innerHeight/2-img.height/2+"px";
 			next.style.top=back.style.top=img.height/2-25+"px";
 		}	
 	}
