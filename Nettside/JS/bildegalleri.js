@@ -22,7 +22,7 @@ function lagBildeGalleri(index){
 		back=document.createElement("img"),
 		exit=document.createElement("div"),
 		newIndex=index;
-	var	currentPicIndex=900;
+	var	currentPicIndex=90000;
 
 	frame.id="bildeGalleriFrame";
 	next.id="bildeGalleriNextButton";
@@ -44,11 +44,35 @@ function lagBildeGalleri(index){
 	exit.innerHTML="&times";
 
 	img.onload=function(){
+		var defaultWidth=this.width,
+			defaultHeight=this.height;
+		if(this.width>=window.outerWidth+120){
+			this.width=window.outerWidth-120;
+		}
+		else{
+			this.width=defaultWidth;
+			this.height=defaultHeight;
+		}
 		frame.style.width=120+this.width+"px";
 		frame.style.height=this.height+"px";
-		frame.style.left=window.innerWidth/2-(120+this.width)/2+"px";
-		frame.style.top=window.innerHeight/2-this.height/2+"px";
+		frame.style.left=window.outerWidth/2-(120+this.width)/2+"px";
+		frame.style.top=window.outerHeight/2-this.height/2+"px";
 		next.style.top=back.style.top=this.height/2-25+"px";
+
+		window.onresize=function(){
+			if(img.width>=window.outerWidth+120){
+				img.width=window.outerWidth-120;
+			}
+			else{
+				img.width=defaultWidth;
+				img.height=defaultHeight;
+			}
+			frame.style.width=120+img.width+"px";
+			frame.style.height=img.height+"px";
+			frame.style.left=window.outerWidth/2-(120+img.width)/2+"px";
+			frame.style.top=window.outerHeight/2-img.height/2+"px";
+			next.style.top=back.style.top=img.height/2-25+"px";
+		}	
 	}
 
 	//funker å bla med piltaster, trykke på pilene, og trykke på bildet
@@ -95,4 +119,3 @@ function lagBildeGalleri(index){
 
 
 }
-console.log((-1)%3)
