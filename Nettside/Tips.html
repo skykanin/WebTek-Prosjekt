@@ -19,7 +19,6 @@
 			#Plån {
 				position: relative;
 				width: 50%;
-				max-width: 50%;
 				display: inline-block;
 				top: 0px;
 			}
@@ -35,7 +34,6 @@
 			#Patb {
 				position: relative;
 				width: 50%;
-				max-width: 50%;
 				display: inline-block;
 				top: 0px;
 			}
@@ -51,9 +49,9 @@
 			#Pmat {
 				position: relative;
 				width: 50%;
-				max-width: 50%;
 				display: inline-block;
 				top: 0px;
+				padding-bottom: 50px;
 			}
 			#Bmat {
 				position: absolute;
@@ -73,6 +71,28 @@
 			}
 			#mat #Bmat {
 				margin-top: 60px;
+			}
+			@media screen and (max-width: 768px){
+				#Bmat > img, #Batb > img, #Blån > img{
+					width: 175px;
+					height: auto;
+					padding-top: 20px;
+				}
+				#Pmat > p, #Patb > p, #Plån > p{
+					font-size: 12pt;
+				}
+			}
+			@media screen and (max-width: 480px){
+				#Pmat, #Patb, #Plån{
+					width: 100%;
+				}
+				#Bmat > img, #Batb > img, #Blån > img{
+					display: none;
+				}
+				#mat, #atb, #lån{
+					padding-top: 20px;
+					padding-bottom: 20px;
+				}
 			}
 		</style>
 	</head>
