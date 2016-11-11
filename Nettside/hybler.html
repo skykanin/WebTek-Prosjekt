@@ -6,16 +6,10 @@
 			.hybel_content{
 				display: inline-block;
 				flex:1;
-				overflow: auto;
-				border-style: none;
 				position: relative;
-				width: 50%;
 				max-width: 50%;
-				height: 300px;
-				left: 0px;
-				margin-left: 2%;
 				margin-top: 2%;
-				margin-right: 2%;
+				padding-left:50px;
 			}
 			#vis_hybler{
 				width: 100%;
@@ -26,23 +20,27 @@
 			}
 			.hybel_picture{
 				position: relative;
-				vertical-align: top;
 				display: inline-block;
-				border-radius: 25px;
-				overflow: hidden;
 				right: -10%;
+				border-radius:30px;
 				height:225px;
-				margin-left: 2%;
-				margin-top: 2%;
-				margin-right: 2%;
 				cursor: pointer;
-				background:white;
+				background-image:url("Content/bakgrunn.jpg");
+				vertical-align: right;
 			}
 			.hybel_picture > img{
 				height:225px;
+				border-radius: 30px;
 			}
 			.hybel_picture:hover{
 				opacity:.85;
+			}
+			@media screen and (max-width:1000px){
+				.hybel_picture{
+					display:block;
+					margin-left:50px;
+					left:0;
+				}
 			}
 			.hybel_content ul {
 			  display: inline-block;
@@ -98,9 +96,11 @@
 				opacity:1;
 				cursor:pointer;
 			}
-
+			#hybel_navn{
+				padding-left:50px;
+			}
 		</style>
-		<title> Home page </title>
+		<title> SIT - Hybler </title>
 		<link rel="stylesheet" href="CSS/mal.css">
 	</head>
 	<body>
