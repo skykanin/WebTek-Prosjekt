@@ -44,15 +44,6 @@ function lagBildeGalleri(index){
 	exit.innerHTML="&times";
 
 	img.onload=function(){
-		var defaultWidth=this.width,
-			defaultHeight=this.height;
-		if(this.width>=window.innerWidth+120){
-			this.width=window.innerWidth-120;
-		}
-		else{
-			this.width=defaultWidth;
-			this.height=defaultHeight;
-		}
 		frame.style.width=120+this.width+"px";
 		frame.style.height=this.height+"px";
 		frame.style.left=window.innerWidth/2-(120+this.width)/2+"px";
@@ -60,13 +51,6 @@ function lagBildeGalleri(index){
 		next.style.top=back.style.top=this.height/2-25+"px";
 
 		window.onresize=function(){
-			if(img.width>=window.innerWidth+120){
-				img.width=window.innerWidth-120;
-			}
-			else{
-				img.width=defaultWidth;
-				img.height=defaultHeight;
-			}
 			frame.style.width=120+img.width+"px";
 			frame.style.height=img.height+"px";
 			frame.style.left=window.innerWidth/2-(120+img.width)/2+"px";
