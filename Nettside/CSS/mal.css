@@ -51,13 +51,13 @@ nav {
 	position: absolute;
 	left: 200px;
 	top: 35px;
-	width: 350px;
+	width: 40%;
 	height: 50px;
 	font-size: 1.1em;
 }
 
 #select > option {
-	background-color: #ccc;
+	background-color: lightgrey;
 	font-family: "Times New Roman";
 	font-size: 1.1em;
 }
