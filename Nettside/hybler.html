@@ -2,6 +2,7 @@
 <html lang="nb">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="CSS/mal.css">
 		<style type="text/css">
 			.hybel_content{
 				display: inline-block;
@@ -9,13 +10,19 @@
 				overflow: auto;
 				border-style: none;
 				position: relative;
-				width: 50%;
-				max-width: 50%;
-				height: 300px;
+				height: auto;
 				left: 0px;
-				margin-left: 2%;
+				margin-left: 50px;
 				margin-top: 2%;
-				margin-right: 2%;
+				margin-right: 10%;
+				width: 50%;
+			}
+			ul{
+				list-style: none;
+			}   
+			li:before {
+   				content: "• ";
+    			color: #969100;
 			}
 			#vis_hybler{
 				width: 100%;
@@ -30,15 +37,16 @@
 				display: inline-block;
 				border-radius: 25px;
 				overflow: hidden;
-				right: -10%;
+				width: 250px;
 				height:225px;
-				margin-left: 2%;
+				margin-left: 50px;
 				margin-top: 2%;
 				margin-right: 2%;
 				cursor: pointer;
 				background:white;
 			}
 			.hybel_picture > img{
+				width:250px;
 				height:225px;
 			}
 			.hybel_picture:hover{
@@ -98,10 +106,24 @@
 				opacity:1;
 				cursor:pointer;
 			}
+			#hybel_navn{
+				padding-left:50px;
+			}
+			@media screen and (max-width: 953px){
+				.hybel_picture{
+					left:calc(25%);
+				}
+				.hybel_content{
+					left:calc(25%);
+				}
+				#hybel_navn{
+					padding-left:25%;				
+				}
+			}
 
 		</style>
-		<title> Home page </title>
-		<link rel="stylesheet" href="CSS/mal.css">
+		<title> Hybler </title>
+		
 	</head>
 	<body>
 	<nav>
@@ -119,7 +141,7 @@
 	<div class="wrapper">
 		<div id="content">
 		    <div id="vis_hybler">
-        		<h3 id="hybel_navn">Her er alle våre hybler</h3>
+        		<h2 id="hybel_navn">Her er alle våre hybler</h2>
               <div class="hybel_content">
                   <p>Leilighet med tre hybler. Perfekt for studenter midt i sentrum av Trondheim. Ligger rett ved Trondheim Torg. Alt er i nærheten. Buss rett utenfor bygget med lett tilgang til Dragvoll, NTNU og BI.</p>
                   <ul>
@@ -134,7 +156,7 @@
                 </div>
 
               <div class="hybel_picture">
-                  <img src="Content\Hybel_pictures\hybel_1_1.jpg">
+                  <img src="Content/Hybel_pictures/hybel_1_1.jpg" alt="Hybel Picture">
               </div>
 
                 <div class="hybel_content">
@@ -151,7 +173,7 @@
                 </div>
 
               <div class="hybel_picture">
-                  <img src="Content\Hybel_pictures\hybel_2_1.jpg">
+                  <img src="Content/Hybel_pictures/hybel_2_1.jpg" alt="Hybel Picture">
               </div>
 
               <div class="hybel_content">
