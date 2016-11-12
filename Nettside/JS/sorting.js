@@ -65,7 +65,7 @@ select.onchange=function(){
 function skrivUt(){
 	for(var i=0;i<hybelContent.length;i++){
 		hybelContent[i].innerHTML=hybler[i].inner;
-		hybelPicture[i].src="Content/Hybel_pictures/hybel_"+hybler[i].picIndex+"_1.jpg";
+		hybelPicture[i].src="content/hybel_pictures/hybel_"+hybler[i].picIndex+"_1.jpg";
 	}
 	//fikse index på bilder
 	for(var i=0;i<hybelpictures.length;i++){

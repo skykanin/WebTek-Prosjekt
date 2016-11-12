@@ -37,8 +37,8 @@ function lagBildeGalleri(index){
 	background.appendChild(frame);
 
 
-	img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
-	back.src=next.src="Content/hybel_pictures/arrow.gif";
+	img.src="content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
+	back.src=next.src="content/hybel_pictures/arrow.gif";
 	exit.innerHTML="&times";
 
 	img.onload=function(){
@@ -71,30 +71,30 @@ function lagBildeGalleri(index){
 		event.cancelBubble=true; 
 		event.stopPropagation();
 		currentPicIndex++;
-		img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
+		img.src="content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
 	}
 	back.onclick=function(){
 		event.cancelBubble=true; 
 		event.stopPropagation();
 		currentPicIndex--;
-		img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
+		img.src="content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
 	}
 	img.onclick=function(){
 		event.cancelBubble=true; 
 		event.stopPropagation();
 		currentPicIndex++;
-		img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
+		img.src="content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
 	}
 	window.onkeydown=function(e){
 		if(e.keyCode=="39" && !clicked){
 			clicked=true;
 			currentPicIndex++;
-			img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
+			img.src="content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
 		}
 		else if(e.keyCode=="37" && !clicked){
 			clicked=true;
 			currentPicIndex--;
-			img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
+			img.src="content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
 		}
 		else if(e.keyCode=="27"){
 			document.body.removeChild(background);
