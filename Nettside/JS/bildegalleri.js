@@ -1,16 +1,13 @@
-const hybelpictures=document.getElementsByClassName("hybel_picture");
-const pictures=[["hybel_1_1", "hybel_1_2", "hybel_1_3"],
-				["hybel_2_1", "hybel_2_2", "hybel_2_3"],
-				["hybel_3_1", "hybel_3_2", "hybel_3_3"]];
+const	hybelpictures=document.getElementsByClassName("hybel_picture");
 
-for(var i in hybelpictures){
-	bildegalleriClick(hybelpictures[i], i);
+for(var i=0;i<hybelpictures.length;i++){
+	bildegalleriClick(hybelpictures[i], hybler[i].picIndex);
 }
 
 //setter en funksjon til hvert bilde
 function bildegalleriClick(picture, index){
 	picture.onclick=function(){
-		lagBildeGalleri(index)
+		lagBildeGalleri(index);
 	}
 }
 //selve galleriet, bytter bilde basert på index man startet med
@@ -22,7 +19,8 @@ function lagBildeGalleri(index){
 		back=document.createElement("img"),
 		exit=document.createElement("div"),
 		newIndex=index;
-	var	currentPicIndex=90000;
+	var	currentPicIndex=90000,
+		clicked=false;
 
 	frame.id="bildeGalleriFrame";
 	next.id="bildeGalleriNextButton";
@@ -39,7 +37,7 @@ function lagBildeGalleri(index){
 	background.appendChild(frame);
 
 
-	img.src="Content/hybel_pictures/"+pictures[newIndex][currentPicIndex%3]+".jpg";
+	img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
 	back.src=next.src="Content/hybel_pictures/arrow.gif";
 	exit.innerHTML="&times";
 
@@ -73,31 +71,38 @@ function lagBildeGalleri(index){
 		event.cancelBubble=true; 
 		event.stopPropagation();
 		currentPicIndex++;
-		img.src="Content/hybel_pictures/"+pictures[newIndex][currentPicIndex%3]+".jpg";
+		img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
 	}
 	back.onclick=function(){
 		event.cancelBubble=true; 
 		event.stopPropagation();
 		currentPicIndex--;
-		img.src="Content/hybel_pictures/"+pictures[newIndex][currentPicIndex%3]+".jpg";
+		img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
 	}
 	img.onclick=function(){
 		event.cancelBubble=true; 
 		event.stopPropagation();
 		currentPicIndex++;
-		img.src="Content/hybel_pictures/"+pictures[newIndex][currentPicIndex%3]+".jpg";
+		img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
 	}
 	window.onkeydown=function(e){
-		if(e.keyCode=="39"){
+		if(e.keyCode=="39" && !clicked){
+			clicked=true;
 			currentPicIndex++;
-			img.src="Content/hybel_pictures/"+pictures[newIndex][currentPicIndex%3]+".jpg";
+			img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
 		}
-		else if(e.keyCode=="37"){
+		else if(e.keyCode=="37" && !clicked){
+			clicked=true;
 			currentPicIndex--;
-			img.src="Content/hybel_pictures/"+pictures[newIndex][currentPicIndex%3]+".jpg";
+			img.src="Content/hybel_pictures/hybel_"+Number(newIndex)+"_"+Number(currentPicIndex%3+1)+".jpg";
 		}
 		else if(e.keyCode=="27"){
 			document.body.removeChild(background);
+		}
+	}
+	window.onkeyup=function(e){
+		if(e.keyCode=="39" || e.keyCode=="37"){
+			clicked=false;
 		}
 	}
 

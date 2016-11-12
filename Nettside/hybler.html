@@ -106,18 +106,24 @@
 				opacity:1;
 				cursor:pointer;
 			}
-			#hybel_navn{
+			#tittel{
 				padding-left:50px;
+			}
+			#sorter{
+				font-size:100%;
 			}
 			@media screen and (max-width: 953px){
 				.hybel_picture{
-					left:calc(25%);
+					margin-left:25%;
 				}
 				.hybel_content{
-					left:calc(25%);
+					margin-left:25%;
 				}
-				#hybel_navn{
+				#tittel{
 					padding-left:25%;				
+				}
+				.footer{
+					margin-top:50px;
 				}
 			}
 
@@ -141,57 +147,65 @@
 	<div class="wrapper">
 		<div id="content">
 		    <div id="vis_hybler">
-        		<h2 id="hybel_navn">Her er alle våre hybler</h2>
+			    <div id="tittel">
+	        		<h2 id="hybel_navn">Her er alle våre hybler</h2>
+	        		Sorter etter: <select id="sorter">		    	
+	        			<option>Lavest Pris</option>
+	        			<option>Størrelse</option>
+	        			<option>Antall Soverom</option>
+	        			<option>Lavest Depositum</option>
+        			</select>
+			    </div>
               <div class="hybel_content">
-                  <p>Leilighet med tre hybler. Perfekt for studenter midt i sentrum av Trondheim. Ligger rett ved Trondheim Torg. Alt er i nærheten. Buss rett utenfor bygget med lett tilgang til Dragvoll, NTNU og BI.</p>
+                  <p >Leilighet med tre hybler. Perfekt for studenter midt i sentrum av Trondheim. Ligger rett ved Trondheim Torg. Alt er i nærheten. Buss rett utenfor bygget med lett tilgang til Dragvoll, NTNU og BI.</p>
                   <ul>
-                    <li>Etasje 3.</li>
-                    <li>Månedsleie: 6000,-</li>
-                    <li>Primærrom 15 m²</li>
-                    <li>Soverom 1</li>
+                    <li>Etasje: 3.</li>
+                    <li >Månedsleie: 6000,-</li>
+                    <li >Primærrom: 15 m²</li>
+                    <li >Soverom: 1</li>
                     <li>Delvis møblert</li>
-                    <li>Depositum 18000,-</li>
+                    <li >Depositum: 18000,-</li>
                     <li>Inkludert: internett</li>
                   </ul> 
-                </div>
+            	</div>
 
               <div class="hybel_picture">
-                  <img src="Content/Hybel_pictures/hybel_1_1.jpg" alt="Hybel Picture">
+                  <img class="pic" src="Content/Hybel_pictures/hybel_1_1.jpg" alt="Hybel Picture">
               </div>
 
                 <div class="hybel_content">
-                  <p>Pen 3 roms på toppen av Sirkus. Oppvarming/varmtvann/internet/kabel-tv er inkludert i leien. Utsikt og solrikt på egen terrasse.</p>
+                  <p>Pen 3 roms på toppen av Sirkus. Oppvarming, varmtvann, internet og kabel-tv er inkludert i leien. Utsikt og solrikt på egen terrasse.</p>
                   <ul>
-                    <li>Etasje 3.</li>
+                    <li>Etasje: 3.</li>
                     <li>Månedsleie: 16 500,-</li>
-                    <li>Primærrom 76 m²</li>
-                    <li>Soverom 2</li>
+                    <li>Primærrom: 76 m²</li>
+                    <li>Soverom: 2</li>
                     <li>Delvis møblert</li>
-                    <li>Depositum 18000,-</li>
+                    <li>Depositum: 18000,-</li>
                     <li>Inkludert: fyring, varmtvann</li>
                   </ul>
                 </div>
 
               <div class="hybel_picture">
-                  <img src="Content/Hybel_pictures/hybel_2_1.jpg" alt="Hybel Picture">
+                  <img  class="pic" src="Content/Hybel_pictures/hybel_2_1.jpg" alt="Hybel Picture">
               </div>
 
-              <div class="hybel_content">
-                  <p>Leiligheten har meget høy standard, med møbler og inventar av høy kvalitet.</p>  
-                  <ul>
-                    <li>Etasje: 3.</li>
-                    <li>Månedsleie: 17 500,-</li>
-                    <li>Primærrom 97 m²</li>
-                    <li>Soverom 2</li>
-                    <li>Møblert</li>
-                    <li>Depositum: 3x husleie</li>
-                  </ul>
-                </div>
+	          <div class="hybel_content">
+	              <p >Leiligheten har meget høy standard, med møbler og inventar av høy kvalitet.</p>  
+	              <ul>
+	                <li>Etasje: 3.</li>
+	                <li >Månedsleie: 17 500,-</li>
+	                <li >Primærrom: 97 m²</li>
+	                <li >Soverom: 2</li>
+	                <li>Møblert</li>
+	                <li >Depositum: 3x husleie</li>
+	              </ul>
+	            </div>
                 
 
-        			<div class="hybel_picture">
-            			<img src="Content/Hybel_pictures/hybel_3_1.jpg" alt="Hybel Picture">
-        			</div>
+				<div class="hybel_picture">
+	    			<img  class="pic" src="Content/Hybel_pictures/hybel_3_1.jpg" alt="Hybel Picture">
+				</div>
     		</div>
 	</div>
 	</div>
@@ -204,6 +218,7 @@
 	</div>
 	</footer>
 	<script type="text/javascript" src="JS/mal.js"></script>
+	<script type="text/javascript" src="JS/sorting.js"></script>
 	<script type="text/javascript" src="JS/bildegalleri.js"></script>
 	</body>
 </html>
