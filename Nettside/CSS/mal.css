@@ -551,9 +551,10 @@
     	height:	650px;
     	width: 90%;
     	margin: 3%;
+    	margin-left: 50px;
 	}
-	#map_h3 {
-		margin-left: 3%;
+	#map_h1{
+		margin-left: 50px;
 	}
 
 /* FAQ */
