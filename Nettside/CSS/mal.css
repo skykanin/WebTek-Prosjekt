@@ -456,7 +456,7 @@
 
 /* Tips */
 	
-	#tips_h1, #tips_h3, #tips_h4 {
+	.tips_head {
 		color: #958f1b;
 		font-size: 18pt;
 		top: 0px;
@@ -520,6 +520,9 @@
 	}
 	#tips_mat #tips_Bilde_mat {
 		margin-top: 60px;
+	}
+	#tips_tittel {
+		margin-left: 50px;
 	}
 	@media screen and (max-width: 768px){
 		#tips_Bilde_mat > img, #tips_Bilde_atb > img, #tips_Bilde_lån > img{

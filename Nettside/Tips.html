@@ -10,99 +10,6 @@ PURPOSE:  Practial information for the visitors
 		<title> Tips for studentar </title>
 		<link rel="stylesheet" href="CSS/mal.css">
 		<link rel="shortcut icon" href="content/favicon.ico">
-		<style type="text/css">
-			h1:not(#tittel),h3,h4 {
-				color: #958f1b;
-				font-size: 18pt;
-				top: 0px;
-			}
-			#tittel {
-				margin-left: 50px;
-			}
-			#content img {
-				height: 250px;
-				width: 250px;
-			}
-
-			#Plån {
-				position: relative;
-				width: 50%;
-				display: inline-block;
-				top: 0px;
-			}
-			#Blån {
-				position: absolute;
-				display: inline-block;
-				right: 10%
-			}
-			#lån {
-				display: block;
-				padding: 50px;
-			}
-			#Patb {
-				position: relative;
-				width: 50%;
-				display: inline-block;
-				top: 0px;
-			}
-			#Batb {
-				position: absolute;
-				display: inline-block;
-				right: 10%;
-			}			
-			#atb {
-				display: block;
-				padding: 50px;
-			}	
-			#Pmat {
-				position: relative;
-				width: 50%;
-				display: inline-block;
-				top: 0px;
-				padding-bottom: 50px;
-			}
-			#Bmat {
-				position: absolute;
-				display: inline-block;
-				right: 10%;
-			}
-			#mat {
-				display: block;
-				padding: 50px;
-				margin-bottom: 80px;
-			}
-			#lån #Blån {
-				margin-top: 60px;
-			}
-			#atb #Batb {
-				margin-top: 60px;
-			}
-			#mat #Bmat {
-				margin-top: 60px;
-			}
-			@media screen and (max-width: 768px){
-				#Bmat > img, #Batb > img, #Blån > img{
-					width: 175px;
-					height: auto;
-					padding-top: 20px;
-				}
-				#Pmat > p, #Patb > p, #Plån > p{
-					font-size: 12pt;
-				}
-			}
-			@media screen and (max-width: 480px){
-				#Pmat, #Patb, #Plån{
-					width: 100%;
-				}
-				#Bmat > img, #Batb > img, #Blån > img{
-					display: none;
-				}
-				#mat, #atb, #lån{
-					padding-top: 20px;
-					padding-bottom: 20px;
-				}
-			}
-		</style>
 	</head>
 	<body>
 	<nav>
@@ -117,45 +24,45 @@ PURPOSE:  Practial information for the visitors
 			<div><a href="kontakt.html">Kontakt oss</a></div>
 		</div>
 	</nav>
-	<h1 id="tittel">Tips for studenter</h1>
+	
 	<div id="content">
-
-		<div id="lån">
-			<div id="Plån">
-				<h1>
+		<h1 id="tips_tittel">Tips for studenter</h1>
+		<div id="tips_lån">
+			<div id="tips_P_lån">
+				<h1 class="tips_head">
 					Lånekassen
 				</h1>
 				<p>
 					Lånekassen er organisasjonen som gir deg som student økonomisk støtte. Vi anbefaler alle studenter å søke støtte fra Lånekassen så snart som mulig. På nettsidene deres ”lanekassen.no” får du informasjon til hvordan du søker, hvor mye støtte du kan forvente, hvordan lån kan bli omgjort til stipend og mye mer!
 				</p>
 			</div>
-			<div id="Blån">
+			<div id="tips_Bilde_lån">
 				<img src="content/lånekassen.jpeg" alt="lånekassen.jpg">
 			</div>
 		</div>
-		<div id="atb">
-			<div id="Patb">
-				<h3>
+		<div id="tips_atb">
+			<div id="tips_P_atb">
+				<h3 class="tips_head">
 					ATB
 				</h3>
 				<p>
 					Som student kan det være greit å ha tilgang til kollektivtransporten. Om en må ta bussen for å dra på skolen, vil besøke våre treningssenter eller bare vil komme seg til / fra sentrum, så er ATB det rette for deg! ATB har hovedansvaret for å planlegge kollektivtransporten. På nettsida ”atb.no” får du all mulig informasjon om priser, bussruter og de meget nyttige appene ”ATB Reise” og ”ATB Mobilett”
 				</p>
 			</div>
-			<div id="Batb">
+			<div id="tips_Bilde_atb">
 				<img src="content/ATB.jpg" alt="ATB.jpg">
 			</div>
 		</div>
-		<div id="mat">
-			<div id="Pmat">
-				<h4>
+		<div id="tips_mat">
+			<div id="tips_P_mat">
+				<h4 class="tips_head">
 					Mattilbud
 				</h4>
 				<p>
 					Som student vil en helst holde matbudsjettet så lavt som mulig, så lenge det fortsatt fyller magen. Mattilbud-appen holder deg oppdatert med tilbud for de forskjellige matvarekjedene og hjelper deg å bestemme hvor du skal kjøpe maten din. I tillegg til vanlige tilbud får du og ”Ukens tilbud” og ”Ukens matrett”. 
 				</p>
 			</div>
-			<div id="Bmat">
+			<div id="tips_Bilde_mat">
 				<img src="content/Mattilbud.jpg" alt="Mattilbud.jpg">
 			</div>	
 		</div>
