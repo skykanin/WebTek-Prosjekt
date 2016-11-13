@@ -9,141 +9,12 @@ PURPOSE:  Show the different houses visitors can rent
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="CSS/mal.css">
 		<link rel="shortcut icon" href="content/favicon.ico">
-		<style type="text/css">
-			.hybel_content{
-				display: inline-block;
-				flex:1;
-				overflow: auto;
-				border-style: none;
-				position: relative;
-				height: auto;
-				left: 0px;
-				margin-left: 50px;
-				margin-top: 2%;
-				margin-right: 10%;
-				width: 50%;
-			}
-			ul{
-				list-style: none;
-			}   
-			li:before {
-   				content: "• ";
-    			color: #969100;
-			}
-			#vis_hybler{
-				width: 100%;
-				height: auto;
-				display: inline-block;
-				position: relative;
-				top: 0px;
-			}
-			.hybel_picture{
-				position: relative;
-				vertical-align: top;
-				display: inline-block;
-				border-radius: 25px;
-				overflow: hidden;
-				width: 250px;
-				height:225px;
-				margin-left: 50px;
-				margin-top: 2%;
-				margin-right: 2%;
-				cursor: pointer;
-				background:white;
-			}
-			.hybel_picture > img{
-				width:250px;
-				height:225px;
-			}
-			.hybel_picture:hover{
-				opacity:.85;
-			}
-			.hybel_content ul {
-			  display: inline-block;
-			  height: auto;
-			}
-			#bildeGalleriFrame{
-				position: absolute;
-				z-index:3;
-			}
-			#bildeGalleriNextButton{
-				right:0;
-				position:absolute;
-				opacity:.5;
-				width:50px;
-			}
-			#bildeGalleriBackButton{
-				left:0;
-				position:absolute;
-				transform:scaleX(-1);
-				opacity: .5;
-				width:50px;
-			}
-			#bildeGalleriNextButton:hover, #bildeGalleriBackButton:hover{
-				opacity: 1;
-				cursor:pointer;
-			}
-			#bildeGalleriBilde{
-				position: absolute;
-				margin-left:60px;
-				margin-right:60px;
-				max-width:calc(90vw - 120px);
-				max-height:calc(90vh - 50px);
-			}
-			#bildeGalleriBakgrunn{
-				position: fixed;
-				background:rgba(40,40,40,.5);
-				top:0;
-				left:0;
-				width:100%;
-				height:100%;
-				z-index:3;
-			}
-			#bildeGalleriExit{
-				right:0;
-				top:0;
-				margin-top:-50px;
-				opacity:.5;
-				color:white;
-				font-size:250%;
-				position: absolute;
-			}
-			#bildeGalleriExit:hover{
-				opacity:1;
-				cursor:pointer;
-			}
-			#tittel{
-				padding-left:50px;
-			}
-			#sorter{
-				font-size:100%;
-			}
-			@media screen and (max-width: 953px){
-				.hybel_picture{
-					margin-left:25%;
-				}
-				.hybel_content{
-					margin-left:25%;
-				}
-				#tittel{
-					padding-left:25%;				
-				}
-				.footer{
-					margin-top:50px;
-				}
-			}
-
-		</style>
 		<title> Hybler </title>
-		
 	</head>
 	<body>
 	<nav>
-<<<<<<< HEAD
 		<a href="index.html"><img id="logo" src="content/test_sit.png" alt="sit logo"/></a>
-=======
 		<a href="hjemmeside.html"><img id="logo" src="Content/test_sit.png" alt="sit logo"/></a>
->>>>>>> origin/master
 		<div id="navbar">
 			<div><a href="OmOss.html">Om oss</a></div>
 			<div><a href="hybler.html">Hybel</a></div>
@@ -157,7 +28,7 @@ PURPOSE:  Show the different houses visitors can rent
 	<div class="wrapper">
 		<div id="content">
 		    <div id="vis_hybler">
-			    <div id="tittel">
+			    <div id="hybel_tittel">
 	        		<h1 id="hybel_navn">Her er alle våre hybler</h2>
 	        		Sorter etter: <select id="sorter">		    	
 	        			<option>Lavest pris</option>
@@ -167,6 +38,7 @@ PURPOSE:  Show the different houses visitors can rent
         			</select>
 			    </div>
               <div class="hybel_content">
+                  <h2 class="hybel_h">Kongens Gate 32</h2>
                   <p >Leilighet med tre hybler. Perfekt for studenter midt i sentrum av Trondheim. Ligger rett ved Trondheim Torg. Alt er i nærheten. Buss rett utenfor bygget med lett tilgang til Dragvoll, NTNU og BI.</p>
                   <ul>
                     <li>Etasje: 3.</li>
@@ -184,6 +56,7 @@ PURPOSE:  Show the different houses visitors can rent
               </div>
 
                 <div class="hybel_content">
+                  <h3 class="hybel_h">Falkenborgvegen 21</h3>
                   <p>Pen 3 roms på toppen av Sirkus. Oppvarming, varmtvann, internet og kabel-tv er inkludert i leien. Utsikt og solrikt på egen terrasse.</p>
                   <ul>
                     <li>Etasje: 3.</li>
@@ -201,6 +74,7 @@ PURPOSE:  Show the different houses visitors can rent
               </div>
 
 	          <div class="hybel_content">
+	              <h4 class="hybel_h">Vilhelm Storms gate 3</h4>
 	              <p >Leiligheten har meget høy standard, med møbler og inventar av høy kvalitet.</p>  
 	              <ul>
 	                <li>Etasje: 3.</li>
