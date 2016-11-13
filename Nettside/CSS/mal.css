@@ -1,4 +1,21 @@
-/* Mal */
+/*FILE NAME: mal.css
+WRITTEN BY:  Nicholas, Thomas, Simon, Adrian and Erik
+WHEN:  2016
+PURPOSE: Styling for the webpages
+
+This CSS dokuments contains the styling for the following:
+
+[1] -> General CSS
+[2] -> Index.html
+[3] -> OmOss.html
+[4] -> hybler.html
+[5] -> tilbud.html
+[6] -> Tips.html
+[7] -> map.html
+[8] -> FAQ.html
+[9] -> kontakt.html */
+
+/* General CSS  */
 
 	html {
 		width: 100%;
@@ -109,7 +126,7 @@
 		color: #555555;
 	}
 	
-/* Hjemmeside */
+/* index.html */
 
 	.hjemmeside_content {
 		width: 45%;
@@ -141,7 +158,7 @@
 		}
 	}
 
-/* Om Oss */
+/* OmOss.html */
 
 	#om_oss_bilde{
 		width: 400px; 
@@ -171,7 +188,7 @@
 		}
 	}
 
-/* Hybler */
+/* hybler.html */
 
 	.hybel_content{
 		display: inline-block;
@@ -300,7 +317,7 @@
 		}
 	}
 
-/* Tilbud */
+/* tilbud.html */
 
 	#tidEin {
 		display: block;
@@ -454,7 +471,7 @@
 		}
 	}
 
-/* Tips */
+/* Tips.html */
 	
 	.tips_head {
 		color: #958f1b;
@@ -547,7 +564,7 @@
 		}
 	}
 
-/* Map */
+/* map.html */
 
 	#google_map{
 		position: fixed;
@@ -560,7 +577,7 @@
 		margin-left: 50px;
 	}
 
-/* FAQ */
+/* FAQ.html */
 
 	#faq_innhold {
 		width: 60%;
@@ -586,7 +603,7 @@
 		}
 	}
 
-/* Kontakt */
+/* kontakt.html */
 
 	#kontakt_content {
 		margin-left: 50px;
