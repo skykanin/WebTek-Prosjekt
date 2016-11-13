@@ -10,169 +10,6 @@ PURPOSE:  Show what kind of resources our client can offer
 		<title> Tilbud </title>
 		<link rel="stylesheet" href="CSS/mal.css">
 		<link rel="shortcut icon" href="content/favicon.ico">
-		<style type="text/css">
-			img {
-				height: 250px;
-				width: 250px;
-			}
-
-			#tidEin {
-				display: block;
-				z-index: 0;
-				position: absolute;
-				max-height: 200px;
-				width: 400px;
-			}
-			#tidTo {
-				z-index: 1;
-				position: absolute;
-				display: block;
-				max-height: 200px;
-				width: 400px;
-				visibility: hidden;
-			}
-			#tidTre {
-				z-index: 2;
-				position: absolute;
-				display: block;
-				max-height: 200px;
-				width: 400px;
-				visibility: hidden;
-			}
-			#tidFire {
-				z-index: 3;
-				position: absolute;
-				display: block;
-				max-height: 200px;
-				width: 400px;
-				visibility: hidden;
-			}
-			#tidFem {
-				z-index: 4;
-				position: absolute;
-				display: block;
-				max-height: 200px;
-				width: 400px;
-				visibility: hidden;
-
-			}
-			#imageOne {
-				z-index: 0;
-				display: inline-block;
-				position: absolute;
-				height: 250px;
-				width: 250px;
-			}
-			#imageTwo {
-				z-index: 1;
-				position: absolute;
-				height: 250px;
-				width: 250px;
-				display: inline-block;
-				visibility: hidden;
-			}
-			#imageThree {
-				z-index: 2;
-				display: inline-block;
-				position: absolute;
-				height: 250px;
-				width: 250px;
-				visibility: hidden;
-
-			}
-			#imageFour {
-				z-index: 3;
-				display: inline-block;
-				position: absolute;
-				height: 250px;
-				width: 250px;
-				visibility: hidden;
-			}
-			#imageFive {
-				z-index: 4;
-				display: inline-block;
-				position: absolute;
-				height: 250px;
-				width: 250px;
-				visibility: hidden;
-			}
-
-			.containerOne {
-				position: relative;
-				display: inline-block;
-				top: calc(50% - 67px);
-				z-index: 1;
-			}
-			.containerTwo {
-				position: absolute;
-				display: inline-block;
-				right: 43%;
-				width: 250px;
-				height: 250px;
-				padding-top: 15px;
-				z-index: 0;
-			}
-			.containerThree {
-				position: absolute;
-				display: inline-block;
-				right: 50px;
-				width: 250px;
-				height: 250px;
-			}
-
-			#tilbudHead {
-				width: 50%;
-				margin-left: 5%;
-			}
-			.over {
-				margin-left: 50px;
-				margin-top: 25px;
-			}
-			.heading {
-				margin-bottom: 5px;
-				list-style-type: none;
-			}
-			.Gløs:hover, .Portalen:hover, .Dragvoll:hover, .Moholt:hover, .DMMH:hover {
-				cursor: pointer;
-			}
-			.contain{
-				height: 250px;
-				width: 90%;
-				left: 30%;
-				margin: auto;
-				margin-bottom: 50px;
-			}
-			li {
-				list-style-type: none;
-			}
-			@media screen and (max-width: 768px){
-				#imageOne, #imageTwo, #imageThree, #imageFour, #imageFive {
-					width: 150px;
-					height: 150px;
-					right: -20px;
-					top: 50px;
-				}
-				li {
-					font-size: 10pt;
-				}
-				#tidEin, #tidTo, #tidTre, #tidFire, #tidFem {
-					top: 42.5px;
-					margin-left: 30%;
-				}
-				.containerOne {
-					margin-top: 7.5px;
-				}
-
-			@media screen and (max-width: 480px){
-				#imageOne, #imageTwo, #imageThree, #imageFour, #imageFive {
-					display: none;
-				}
-				#tidEin, #tidTo, #tidTre, #tidFire, #tidFem {
-					margin-left: 70%;
-				}
-			}
-			}
-		</style>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -190,29 +27,29 @@ PURPOSE:  Show what kind of resources our client can offer
 		</nav>
 		
 		<div id="content">
-			<div id="tilbudHead">
+			<div id="tilbud_Head">
 				<h1>Treningsenter</h1>
 				<p>Sit gir deg tilbud til trening for en rimelig pris. Vi har fem treningssenter spredd over Trondheim, slik at alle studentene kan benytte seg av våre tilbud!</p>
 			</div>
-			<div class="contain">
-				<div class="containerOne">
-					<div><a class="Gløs">Gløshaugen</a></div>
-					<div onmouseover="Portalen()" onmouseout="Portalen2()"><a class="Portalen">Portalen</a></div>
-					<div onmouseover="Dragvoll()" onmouseout="Dragvoll2()"><a class="Dragvoll">Dragvoll</a></div>
-					<div onmouseover="Moholt()" onmouseout="Moholt2()"><a class="Moholt">Moholt</a></div>
-					<div onmouseover="DMMH()" onmouseout="DMMH2()"><a class="DMMH">DMMH</a></div>
+			<div class="tilbud_contain">
+				<div class="tilbud_containerOne">
+					<div><a class="tilbud_Gløs">Gløshaugen</a></div>
+					<div onmouseover="Portalen()" onmouseout="Portalen2()"><a class="tilbud_Portalen">Portalen</a></div>
+					<div onmouseover="Dragvoll()" onmouseout="Dragvoll2()"><a class="tilbud_Dragvoll">Dragvoll</a></div>
+					<div onmouseover="Moholt()" onmouseout="Moholt2()"><a class="tilbud_Moholt">Moholt</a></div>
+					<div onmouseover="DMMH()" onmouseout="DMMH2()"><a class="tilbud_DMMH">DMMH</a></div>
 				</div>
-				<div class="containerThree">
+				<div class="tilbud_containerThree">
 					<img src="content/Gløshaugen.jpg" id="imageOne" alt="Gløshaugen">
 					<img src="content/Portalen.jpg" id="imageTwo" alt="Portalen">
 					<img src="content/Dragvoll idrettssenter.jpg" id="imageThree" alt="Dragvoll">
 					<img src="content/Moholt.jpg" id="imageFour" alt="Moholt">
 					<img src="content/Sit Idrett DMMH.jpg" id="imageFive" alt="DMMH">
 				</div>
-				<div class="containerTwo">
+				<div class="tilbud_containerTwo">
 					<div id="tidEin">
 						<ul>
-							<li class="heading">Gløshaugen Åpningstider:</li>
+							<li class="tilbud_heading">Gløshaugen Åpningstider:</li>
 							<li>Mandag:		06.30 - 23.30</li>
 							<li>Tirsdag:	07.30 - 23.00</li>
 							<li>Onsdag:		06.30 - 23.30</li>
@@ -224,7 +61,7 @@ PURPOSE:  Show what kind of resources our client can offer
 					</div>
 					<div id="tidTo">
 						<ul>
-							<li class="heading">Portalen Åpningstider:</li>
+							<li class="tilbud_heading">Portalen Åpningstider:</li>
 							<li>Mandag:		07.30 - 22.00</li>
 							<li>Tirsdag:	06.30 - 22.00</li>
 							<li>Onsdag:		07.30 - 22.00</li>
@@ -236,7 +73,7 @@ PURPOSE:  Show what kind of resources our client can offer
 					</div>
 					<div id="tidTre">
 						<ul>
-							<li class="heading">Dragvoll Åpningstider:</li>
+							<li class="tilbud_heading">Dragvoll Åpningstider:</li>
 							<li>Mandag:		07.30 - 22.00</li>
 							<li>Tirsdag:	07.30 - 22.00</li>
 							<li>Onsdag:		07.30 - 22.00</li>
@@ -248,7 +85,7 @@ PURPOSE:  Show what kind of resources our client can offer
 					</div>
 					<div id="tidFire">
 						<ul>
-							<li class="heading">Moholt Åpningstider:</li>
+							<li class="tilbud_heading">Moholt Åpningstider:</li>
 							<li>Mandag:		08.00 - 22.00</li>
 							<li>Tirsdag:	08.00 - 22.00</li>
 							<li>Onsdag:		08.00 - 22.00</li>
@@ -260,7 +97,7 @@ PURPOSE:  Show what kind of resources our client can offer
 					</div>
 					<div id="tidFem">
 						<ul>
-							<li class="heading">DMMH Åpningstider:</li>
+							<li class="tilbud_heading">DMMH Åpningstider:</li>
 							<li>Mandag:		06.30 - 23.00</li>
 							<li>Tirsdag:	06.30 - 23.00</li>
 							<li>Onsdag:		06.30 - 23.00</li>
